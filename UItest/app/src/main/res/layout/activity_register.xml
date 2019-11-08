@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/Linear_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_backround"
+    android:padding="20dp"
+    tools:context=".register"
+    >
+
+    <ImageButton
+        android:id="@+id/Ibtn_back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@drawable/arrow_back"
+         />
+
+    <TextView
+        android:id="@+id/tv_CreateAccount"
+        android:layout_width="153dp"
+        android:layout_height="95dp"
+        android:background="@drawable/ripple_textview"
+        android:fontFamily="@font/chela_one"
+        android:onClick="dummyCLick"
+        android:text="Create\nAccount"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/relative_backround"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_regis_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/abhaya_libre"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+            <EditText
+                android:id="@+id/et_register_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/icons8_user_200px"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="Your name..."
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_regis_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/abhaya_libre"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+            <EditText
+                android:id="@+id/et_regis_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/icons8_password_200px_1"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="Password"
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_regis_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/abhaya_libre"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+            <EditText
+                android:id="@+id/et_regis_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/icons8_email_200px"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_regis_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/abhaya_libre"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+            <EditText
+                android:id="@+id/et_regis_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/icons8_phone_200px"
+                android:fontFamily="@font/abhaya_libre"
+                android:hint="Your phone"
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/create_account_button"
+        android:text="C r e a t e"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+</LinearLayout>
